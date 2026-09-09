@@ -2,9 +2,6 @@
   "name": "Portainer Templates",
   "version": "2",
   "templates": [
-{
-  "version": "3",
-  "templates": [
     {
       "categories": [
         "Automation",
