@@ -1,0 +1,11 @@
+---
+- name: Deploy de Stack Docker Compose
+  hosts: docker_hosts
+  gather_facts: false
+
+  tasks:
+    - name: Garantir que a stack esta rodando
+      community.docker.docker_compose_v2:
+        project_src: "{{ playbook_dir }}/{{ stack_name }}"
+        state: present
+        pull: always
